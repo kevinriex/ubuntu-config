@@ -10,7 +10,6 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docke
 sudo apt update
 apt-cache policy docker-ce
 sudo apt install docker-ce -y
-sudo systemctl status docker
 
 sudo curl -L "https://github.com/docker/compose/releases/download/2.11.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
